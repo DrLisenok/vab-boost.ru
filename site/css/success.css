@@ -1,0 +1,71 @@
+/* ==================== SUCCESS PAGE ==================== */
+.success-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--bg-color) 100%);
+    padding: 20px;
+}
+
+.success-container {
+    background: var(--bg-card);
+    border-radius: var(--radius);
+    padding: 40px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.success-icon {
+    font-size: 5rem;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+}
+
+.success-container h1 {
+    margin-bottom: 20px;
+}
+
+.order-details {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius);
+    padding: 25px;
+    margin: 30px 0;
+    text-align: left;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    color: var(--text-secondary);
+}
+
+.detail-value {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.detail-value.amount {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.success-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}

@@ -1,0 +1,27 @@
+Array
+(
+    [timestamp] => 2025-12-11 21:00:38
+    [method] => POST
+    [content_type] => application/json
+    [input] => {"service_type":"wins_boost","current_rank":"Gold 2","target_rank":"Immortal 2","region":"RU","game_login":"admin","game_password":"password","contact_type":"telegram","contact_value":"awdawd","notes":"awddwa","amount":"1999","privacy_agreement":"on","terms_agreement":"on","price":1000}
+)
+
+
+Array
+(
+    [timestamp] => 2025-12-11 21:00:46
+    [method] => POST
+    [content_type] => application/json
+    [input] => {"service_type":"wins_boost","current_rank":"Gold 2","target_rank":"Immortal 2","region":"RU","game_login":"admin","game_password":"password","contact_type":"telegram","contact_value":"@awdawd","notes":"awddwa","amount":"1999","privacy_agreement":"on","terms_agreement":"on","price":1000}
+)
+
+
+Array
+(
+    [timestamp] => 2025-12-11 21:00:53
+    [method] => POST
+    [content_type] => application/json
+    [input] => {"service_type":"wins_boost","current_rank":"Gold 2","target_rank":"Immortal 2","region":"RU","game_login":"admin","game_password":"password","contact_type":"telegram","contact_value":"@awdawd","notes":"awddwa","amount":"1999","privacy_agreement":"on","terms_agreement":"on","price":1000}
+)
+
+

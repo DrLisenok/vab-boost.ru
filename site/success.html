@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ успешно оформлен | VAB BOOST</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/success.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <style>
+        .success-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg) 100%);
+        }
+        
+        .success-card {
+            background: var(--gradient-card);
+            border-radius: var(--border-radius-lg);
+            padding: 50px;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            border: 1px solid var(--color-border);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .success-icon {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 30px;
+            background: var(--color-success);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: successPulse 2s infinite;
+        }
+        
+        .success-icon i {
+            font-size: 3rem;
+            color: white;
+        }
+        
+        @keyframes successPulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 210, 106, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(0, 210, 106, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 210, 106, 0); }
+        }
+        
+        .order-details {
+            background: var(--gradient-dark);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-label {
+            color: var(--color-text-secondary);
+            font-weight: 500;
+        }
+        
+        .detail-value {
+            font-weight: 600;
+            color: var(--color-primary);
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .action-buttons .btn {
+            min-width: 200px;
+        }
+        
+        .support-info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--color-border);
+            color: var(--color-text-muted);
+        }
+        
+        @media (max-width: 768px) {
+            .success-card {
+                padding: 30px 20px;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .action-buttons .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-card">
+            <div class="success-icon">
+                <i class="fas fa-check"></i>
+            </div>
+            
+            <h1>Заказ успешно оформлен!</h1>
+            <p>Спасибо за ваш заказ. Наш менеджер свяжется с вами в ближайшее время для уточнения деталей.</p>
+            
+            <div class="order-details" id="order-details">
+                <!-- Данные заказа будут загружены через JavaScript -->
+                <div class="detail-item">
+                    <span class="detail-label">ID заказа:</span>
+                    <span class="detail-value" id="order-id">Загрузка...</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Услуга:</span>
+                    <span class="detail-value" id="service-type">Загрузка...</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Сумма:</span>
+                    <span class="detail-value" id="order-amount">Загрузка...</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Статус:</span>
+                    <span class="detail-value status-badge status-completed" id="order-status">Оплачено</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Способ связи:</span>
+                    <span class="detail-value" id="contact-info">Загрузка...</span>
+                </div>
+            </div>
+            
+            <div class="support-info">
+                <p><i class="fas fa-info-circle"></i> Если у вас есть вопросы, свяжитесь с нашей поддержкой:</p>
+                <p style="margin-top: 10px;">
+                    <strong>Telegram:</strong> 
+                    <a href="https://t.me/vabboost" target="_blank" style="color: var(--color-primary);">@vabboost</a>
+                </p>
+                <p>
+                    <strong>Discord:</strong> 
+                    <a href="https://discord.gg/vabboost" target="_blank" style="color: var(--color-primary);">vabboost</a>
+                </p>
+                <p><i class="fas fa-clock"></i> Среднее время ответа: 15 минут</p>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="/" class="btn btn-primary">
+                    <i class="fas fa-home"></i> На главную
+                </a>
+                <a href="https://t.me/vabboost" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-telegram"></i> Написать в Telegram
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Получаем параметры из URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const orderId = urlParams.get('order_id');
+        const paymentId = urlParams.get('payment_id');
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            if (orderId) {
+                // Загружаем информацию о заказе
+                loadOrderDetails(orderId);
+            } else if (paymentId) {
+                // Если передан payment_id, ищем заказ по нему
+                loadOrderByPayment(paymentId);
+            }
+            
+            // Отправляем событие в Яндекс.Метрику о успешной оплате
+            if (typeof ym !== 'undefined') {
+                ym(97548675, 'reachGoal', 'successful_payment');
+            }
+        });
+        
+        async function loadOrderDetails(orderId) {
+            try {
+                const response = await fetch(`/orders.php?id=${orderId}`);
+                if (response.ok) {
+                    const order = await response.json();
+                    displayOrderDetails(order);
+                } else {
+                    document.getElementById('order-details').innerHTML = `
+                        <p style="text-align: center; color: var(--color-text-muted);">
+                            <i class="fas fa-exclamation-triangle"></i> 
+                            Информация о заказе временно недоступна
+                        </p>
+                    `;
+                }
+            } catch (error) {
+                console.error('Error loading order details:', error);
+            }
+        }
+        
+        async function loadOrderByPayment(paymentId) {
+            try {
+                const response = await fetch(`/payments.php?payment_id=${paymentId}`);
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.order) {
+                        displayOrderDetails(data.order);
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading order by payment:', error);
+            }
+        }
+        
+        function displayOrderDetails(order) {
+            document.getElementById('order-id').textContent = order.order_id;
+            
+            // Преобразуем тип услуги в читаемый вид
+            const serviceNames = {
+                'rank_boost': 'Повышение ранга',
+                'wins_boost': 'Буст побед',
+                'placement': 'Калибровка ранга',
+                'coaching': 'Коучинг'
+            };
+            document.getElementById('service-type').textContent = serviceNames[order.service_type] || order.service_type;
+            
+            document.getElementById('order-amount').textContent = `${order.amount} ₽`;
+            
+            // Преобразуем статус
+            const statusNames = {
+                'pending': 'Ожидание оплаты',
+                'paid': 'Оплачено',
+                'in_progress': 'В работе',
+                'completed': 'Завершено',
+                'cancelled': 'Отменено'
+            };
+            document.getElementById('order-status').textContent = statusNames[order.status] || order.status;
+            
+            // Контактная информация
+            let contactInfo = '';
+            if (order.contact_type === 'telegram') {
+                contactInfo = `Telegram: ${order.contact_value}`;
+            } else if (order.contact_type === 'discord') {
+                contactInfo = `Discord: ${order.contact_value}`;
+            } else if (order.contact_type === 'email') {
+                contactInfo = `Email: ${order.contact_value}`;
+            } else {
+                contactInfo = order.contact_value;
+            }
+            document.getElementById('contact-info').textContent = contactInfo;
+            
+            // Если есть информация о текущем и целевом ранге, добавляем её
+            if (order.current_rank && order.target_rank) {
+                const detailsDiv = document.getElementById('order-details');
+                const rankItem = document.createElement('div');
+                rankItem.className = 'detail-item';
+                rankItem.innerHTML = `
+                    <span class="detail-label">Ранг:</span>
+                    <span class="detail-value">${order.current_rank} → ${order.target_rank}</span>
+                `;
+                detailsDiv.insertBefore(rankItem, detailsDiv.children[2]);
+            }
+            
+            // Добавляем информацию о регионе, если есть
+            if (order.region) {
+                const detailsDiv = document.getElementById('order-details');
+                const regionItem = document.createElement('div');
+                regionItem.className = 'detail-item';
+                regionItem.innerHTML = `
+                    <span class="detail-label">Регион:</span>
+                    <span class="detail-value">${order.region}</span>
+                `;
+                detailsDiv.insertBefore(regionItem, detailsDiv.children[3]);
+            }
+        }
+    </script>
+</body>
+</html>
