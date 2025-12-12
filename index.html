@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VAB BOOST - профессиональный буст в Valorant. Повышение ранга, обучение, калибровка от топ-игроков">
+    <meta name="keywords" content="Valorant, буст, бустинг, повышение ранга, обучение, коучинг, калибровка">
+    <meta name="author" content="VAB BOOST">
+    <title>VAB BOOST | Профессиональный буст в Valorant</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <div class="valorant-icon">
+                    <div class="v-shape"></div>
+                    <div class="v-shape v-shape-2"></div>
+                </div>
+                <span class="logo-text">VAB BOOST</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <span class="logo-text">VAB<span class="logo-accent">BOOST</span></span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Главная</a>
+                <a href="#services" class="nav-link"><i class="fas fa-gamepad"></i> Услуги</a>
+                <a href="#features" class="nav-link"><i class="fas fa-star"></i> Преимущества</a>
+                <a href="#reviews" class="nav-link"><i class="fas fa-comment"></i> Отзывы</a>
+                <a href="#faq" class="nav-link"><i class="fas fa-question-circle"></i> FAQ</a>
+                <a href="#order" class="nav-link nav-cta"><i class="fas fa-bolt"></i> Заказать</a>
+                <a href="admin.html" class="nav-link admin-link"><i class="fas fa-lock"></i> Админ</a>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">
+                    <span class="badge"><i class="fas fa-crown"></i> ТОП-1 В РОССИИ</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">ПРОФЕССИОНАЛЬНЫЙ</span>
+                    <span>БУСТ В VALORANT</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Достигни своего максимального ранга с помощью наших топ-игроков.<br>
+                    Быстро, безопасно и анонимно.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="2500">0</div>
+                        <div class="stat-label">Выполненных заказов</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="98">0</div>
+                        <div class="stat-label">% Довольных клиентов</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">/7 Поддержка</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Среднее время</div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#order" class="btn btn-primary btn-lg btn-glow">
+                        <i class="fas fa-bolt"></i> Оформить заказ
+                    </a>
+                    <a href="#services" class="btn btn-outline btn-lg">
+                        <i class="fas fa-list"></i> Все услуги
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image" data-aos="fade-left">
+                <div class="valorant-agent">
+                    <div class="agent-card">
+                        <div class="agent-rating">
+                            <i class="fas fa-star"></i> Radiant
+                        </div>
+                        <div class="agent-name">Phoenix</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="particles" id="particles"></div>
+            <div class="hero-overlay"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="gradient-text">НАШИ УСЛУГИ</span>
+                </h2>
+                <p class="section-subtitle">Выберите подходящий вариант для вашего прогресса в Valorant</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <div class="service-badge">Популярно</div>
+                    <h3 class="service-title">Повышение ранга</h3>
+                    <p class="service-description">
+                        Профессиональные игроки повысят ваш ранг быстро и безопасно. 
+                        Гарантия анонимности и сохранения аккаунта.
+                    </p>
+                    <div class="service-price">
+                        <span class="price-amount">от 1 999 ₽</span>
+                        <span class="price-note">за 1 ранг</span>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Безопасно</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Анонимно</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Онлайн-трекер</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block select-service" 
+                            data-service="rank_boost" 
+                            data-amount="1999"
+                            data-description="Повышение ранга">
+                        Выбрать услугу
+                    </button>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="service-title">Буст побед</h3>
+                    <p class="service-description">
+                        Нужны победы для получения скинов или выполнения задания? 
+                        Наши игроки гарантируют результат.
+                    </p>
+                    <div class="service-price">
+                        <span class="price-amount">299 ₽</span>
+                        <span class="price-note">за победу</span>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Быстро</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Гарантия</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Любой режим</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block select-service"
+                            data-service="wins_boost"
+                            data-amount="299"
+                            data-description="Буст побед">
+                        Выбрать услугу
+                    </button>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="service-badge">Хит сезона</div>
+                    <h3 class="service-title">Калибровка аккаунта</h3>
+                    <p class="service-description">
+                        Получите высокий стартовый ранг для нового аккаунта или сезона. 
+                        Максимальный результат за минимальное время.
+                    </p>
+                    <div class="service-price">
+                        <span class="price-amount">2 499 ₽</span>
+                        <span class="price-note">за калибровку</span>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>10 игр</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Высокий рейтинг</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Статистика</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block select-service"
+                            data-service="placement"
+                            data-amount="2499"
+                            data-description="Калибровка аккаунта">
+                        Выбрать услугу
+                    </button>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="service-title">Коучинг</h3>
+                    <p class="service-description">
+                        Индивидуальные тренировки с разбором ошибок и улучшением навыков. 
+                        Персональный подход от топ-игроков.
+                    </p>
+                    <div class="service-price">
+                        <span class="price-amount">999 ₽</span>
+                        <span class="price-note">за час</span>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Разбор демок</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Практика</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Персональный план</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block select-service"
+                            data-service="coaching"
+                            data-amount="999"
+                            data-description="Коучинг">
+                        Выбрать услугу
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="gradient-text">ПОЧЕМУ МЫ?</span>
+                </h2>
+                <p class="section-subtitle">Лучший сервис буста в Valorant по версии наших клиентов</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>100% Безопасность</h3>
+                    <p>Используем VPN, античит системы и гарантируем сохранность вашего аккаунта</p>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Молниеносная скорость</h3>
+                    <p>Среднее время выполнения заказа - 24 часа. Срочные заказы за 6 часов</p>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Топовые игроки</h3>
+                    <p>В нашей команде только Radiant игроки с подтвержденным рейтингом</p>
+                </div>
+                
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Круглосуточная поддержка</h3>
+                    <p>Наши менеджеры онлайн 24/7 в Telegram и Discord для решения вопросов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section class="order-section" id="order">
+        <div class="container">
+            <div class="order-container" data-aos="fade-up">
+                <div class="order-header">
+                    <h2>Оформление заказа</h2>
+                    <p>Заполните форму ниже для начала работы</p>
+                </div>
+                
+                <form id="orderForm" class="order-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="service_type">Тип услуги *</label>
+                            <select id="service_type" name="service_type" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="rank_boost">Повышение ранга</option>
+                                <option value="wins_boost">Буст побед</option>
+                                <option value="placement">Калибровка аккаунта</option>
+                                <option value="coaching">Коучинг</option>
+                                <option value="custom">Индивидуальный заказ</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="current_rank">Текущий ранг</label>
+                            <select id="current_rank" name="current_rank">
+                                <option value="">Не выбрано</option>
+                                <option value="iron">Iron</option>
+                                <option value="bronze">Bronze</option>
+                                <option value="silver">Silver</option>
+                                <option value="gold">Gold</option>
+                                <option value="platinum">Platinum</option>
+                                <option value="diamond">Diamond</option>
+                                <option value="ascendant">Ascendant</option>
+                                <option value="immortal">Immortal</option>
+                                <option value="radiant">Radiant</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="target_rank">Целевой ранг</label>
+                            <select id="target_rank" name="target_rank">
+                                <option value="">Не выбрано</option>
+                                <option value="iron">Iron</option>
+                                <option value="bronze">Bronze</option>
+                                <option value="silver">Silver</option>
+                                <option value="gold">Gold</option>
+                                <option value="platinum">Platinum</option>
+                                <option value="diamond">Diamond</option>
+                                <option value="ascendant">Ascendant</option>
+                                <option value="immortal">Immortal</option>
+                                <option value="radiant">Radiant</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="region">Регион *</label>
+                            <select id="region" name="region" required>
+                                <option value="RU">Россия (RU)</option>
+                                <option value="EU">Европа (EU)</option>
+                                <option value="NA">Северная Америка (NA)</option>
+                                <option value="ASIA">Азия (ASIA)</option>
+                                <option value="OTHER">Другие регионы</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact_type">Способ связи *</label>
+                            <select id="contact_type" name="contact_type" required>
+                                <option value="telegram">Telegram</option>
+                                <option value="discord">Discord</option>
+                                <option value="email">Email</option>
+                                <option value="whatsapp">WhatsApp</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact">Контактные данные *</label>
+                            <input type="text" id="contact" name="contact" 
+                                   placeholder="@username или email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="amount">Сумма (₽) *</label>
+                            <div class="amount-input">
+                                <input type="number" id="amount" name="amount" 
+                                       min="1" step="1" value="1999" required>
+                                <div class="amount-buttons">
+                                    <button type="button" class="amount-btn" data-change="-100">-100</button>
+                                    <button type="button" class="amount-btn" data-change="100">+100</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="notes">Дополнительные пожелания</label>
+                            <textarea id="notes" name="notes" rows="3" 
+                                      placeholder="Любые дополнительные требования или информация..."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="form-footer">
+                        <div class="terms-agreement">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">
+                                Я соглашаюсь с 
+                                <a href="terms.html" target="_blank">Пользовательским соглашением</a> и 
+                                <a href="privacy.html" target="_blank">Политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-outline" id="calculateBtn">
+                                <i class="fas fa-calculator"></i> Рассчитать стоимость
+                            </button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-glow">
+                                <i class="fas fa-credit-card"></i> Перейти к оплате
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                
+                <div id="paymentResult" class="payment-result hidden">
+                    <div class="payment-success">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Заказ успешно создан!</h3>
+                        <p>Перенаправляем на страницу оплаты...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="gradient-text">ОТЗЫВЫ КЛИЕНТОВ</span>
+                </h2>
+                <p class="section-subtitle">Что говорят наши клиенты о работе с нами</p>
+            </div>
+            
+            <div class="reviews-slider" id="reviewsSlider">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex" alt="Алексей">
+                        </div>
+                        <div class="review-info">
+                            <h4>Алексей</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Заказал буст с Gold до Platinum. Сделали за 2 дня! Бустер был вежливый, 
+                        играл аккуратно. Всем рекомендую!
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-date">2 дня назад</span>
+                        <span class="review-service">Повышение ранга</span>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Maria" alt="Мария">
+                        </div>
+                        <div class="review-info">
+                            <h4>Мария</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Отличный сервис! Заказывала калибровку для нового аккаунта. 
+                        Получила Platinum 2, хотя рассчитывала максимум на Gold.
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-date">Неделю назад</span>
+                        <span class="review-service">Калибровка</span>
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Dmitry" alt="Дмитрий">
+                        </div>
+                        <div class="review-info">
+                            <h4>Дмитрий</h4>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        Прошел коучинг у топового игрока. Разобрали все ошибки, 
+                        получил индивидуальные рекомендации. Уже поднялся на 2 ранга!
+                    </p>
+                    <div class="review-meta">
+                        <span class="review-date">2 недели назад</span>
+                        <span class="review-service">Коучинг</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    <span class="gradient-text">ЧАСТЫЕ ВОПРОСЫ</span>
+                </h2>
+                <p class="section-subtitle">Ответы на самые популярные вопросы</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>Безопасно ли это для моего аккаунта?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы используем VPN и дополнительные меры безопасности. 
+                        Все наши бустеры имеют большой опыт работы и следят за безопасностью аккаунта.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>Сколько времени занимает выполнение заказа?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Среднее время: 24-72 часа в зависимости от сложности. 
+                        Срочные заказы выполняем за 6-12 часов с доплатой 30%.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>Могу ли я отслеживать прогресс?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, вы получаете доступ к личному кабинету, где в реальном времени 
+                        видите прогресс выполнения заказа.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3>Что делать, если я не доволен результатом?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы предоставляем гарантию на все услуги. Если что-то пошло не так, 
+                        мы исправим ситуацию или вернем деньги.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="/" class="footer-logo">
+                        VAB<span>BOOST</span>
+                    </a>
+                    <p class="footer-description">
+                        Профессиональный сервис буста в Valorant.<br>
+                        Быстро, безопасно, эффективно.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://t.me/vabboost" class="social-link" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://discord.gg/vabboost" class="social-link" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://vk.com/vabboost" class="social-link" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Повышение ранга</a></li>
+                        <li><a href="#services">Буст побед</a></li>
+                        <li><a href="#services">Калибровка</a></li>
+                        <li><a href="#services">Коучинг</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul class="footer-links">
+                        <li><a href="terms.html">Пользовательское соглашение</a></li>
+                        <li><a href="privacy.html">Политика конфиденциальности</a></li>
+                        <li><a href="legal.html">Реквизиты</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li><i class="fas fa-envelope"></i> support@vab-boost.ru</li>
+                        <li><i class="fab fa-telegram"></i> @vabboost_support</li>
+                        <li><i class="fas fa-phone"></i> 8 (800) 123-45-67</li>
+                        <li><i class="fas fa-clock"></i> Круглосуточно</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 VAB BOOST. Все права защищены.</p>
+                <p>ИП Иванов Иван Иванович | ИНН 123456789012 | ОГРНИП 123456789012345</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://t.me/vabboost_support" class="floating-button telegram" target="_blank">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="#order" class="floating-button order">
+            <i class="fas fa-bolt"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/payment.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

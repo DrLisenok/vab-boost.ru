@@ -1,0 +1,448 @@
+/* ============================================
+   VAB BOOST - Responsive Styles
+   ============================================ */
+
+/* Extra Large Screens (1440px and up) */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-title {
+        font-size: 4rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Large Screens (1200px to 1439px) */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0 2rem;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets and Small Laptops (992px to 1199px) */
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 2.75rem;
+    }
+    
+    h2 {
+        font-size: 2.25rem;
+    }
+    
+    .hero {
+        padding: calc(var(--header-height) + 3rem) 0 4rem;
+    }
+    
+    .hero-title {
+        font-size: 2.75rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .section {
+        padding: 4rem 0;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets Portrait (768px to 991px) */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        height: calc(100vh - var(--header-height));
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        transform: translateX(-100%);
+        transition: transform var(--transition-normal);
+        z-index: 999;
+        overflow-y: auto;
+    }
+    
+    .dark-mode .nav-menu {
+        background: var(--dark);
+    }
+    
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+    
+    .nav-link {
+        padding: 0.75rem 0;
+        width: 100%;
+        border-bottom: 1px solid var(--gray-light);
+    }
+    
+    .dark-mode .nav-link {
+        border-color: var(--gray-dark);
+    }
+    
+    .nav-cta {
+        margin-top: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+    
+    /* Hero Section */
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.25rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.125rem;
+    }
+    
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-image {
+        display: none;
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Features */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Order Form */
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .form-actions .btn {
+        width: 100%;
+    }
+    
+    /* Reviews */
+    .reviews-slider {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    .footer-contacts li {
+        justify-content: center;
+    }
+    
+    /* Floating Buttons */
+    .floating-buttons {
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    .floating-button {
+        width: 48px;
+        height: 48px;
+        font-size: 1.25rem;
+    }
+}
+
+/* Mobile Landscape (576px to 767px) */
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .hero {
+        padding: calc(var(--header-height) + 2rem) 0 3rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
+    }
+    
+    .order-header {
+        padding: 1.5rem;
+    }
+    
+    .order-form {
+        padding: 1.5rem;
+    }
+    
+    .btn-lg {
+        padding: 0.875rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    /* Preloader */
+    .preloader-logo {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .logo-text {
+        font-size: 1.5rem;
+    }
+    
+    /* Payment Modal */
+    .payment-modal-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .payment-modal-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .payment-modal-actions .btn {
+        width: 100%;
+    }
+}
+
+/* Small Mobile Devices (up to 575px) */
+@media screen and (max-width: 375px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .services-grid {
+        gap: 1rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .review-card {
+        padding: 1.5rem;
+    }
+    
+    .floating-buttons {
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+    
+    .floating-button {
+        width: 44px;
+        height: 44px;
+        font-size: 1rem;
+    }
+}
+
+/* Height-based adjustments */
+@media screen and (max-height: 600px) {
+    .hero {
+        min-height: auto;
+        padding: calc(var(--header-height) + 2rem) 0 3rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-stats {
+        margin: 2rem 0;
+    }
+    
+    .nav-menu {
+        padding: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .hero-bg,
+    .floating-buttons,
+    .footer,
+    .btn {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .section {
+        padding: 1rem 0;
+        page-break-inside: avoid;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: underline;
+    }
+    
+    .gradient-text {
+        background: none !important;
+        -webkit-text-fill-color: black !important;
+        color: black !important;
+    }
+}
+
+/* High DPI Screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-bg {
+        background-size: cover;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Dark Mode Media Query */
+@media (prefers-color-scheme: dark) {
+    body:not(.light-mode) {
+        /* Only apply if user hasn't manually selected light mode */
+        color-scheme: dark;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .nav-link,
+    .btn,
+    .service-card,
+    .feature-item,
+    .review-card {
+        min-height: 44px;
+    }
+    
+    .btn {
+        padding: 1rem 1.5rem;
+    }
+    
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .floating-button {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+/* Foldable Devices */
+@media (max-width: 350px) {
+    .logo-text {
+        font-size: 1.25rem;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.875rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+}

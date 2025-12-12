@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги и цены | VAB BOOST</title>
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <span class="logo-text">VAB<span class="logo-accent">BOOST</span></span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="/" class="nav-link"><i class="fas fa-home"></i> Главная</a>
+                <a href="pricelist.html" class="nav-link active"><i class="fas fa-list"></i> Услуги</a>
+                <a href="terms.html" class="nav-link"><i class="fas fa-file-contract"></i> Соглашение</a>
+                <a href="legal.html" class="nav-link"><i class="fas fa-balance-scale"></i> Реквизиты</a>
+                <a href="privacy.html" class="nav-link"><i class="fas fa-shield-alt"></i> Конфиденциальность</a>
+                <a href="admin.html" class="nav-link"><i class="fas fa-lock"></i> Админ</a>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Hero -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Услуги и цены</h1>
+                <p>Прозрачное ценообразование и детальное описание всех услуг</p>
+                
+                <div class="pricing-switch">
+                    <button class="switch-btn active" data-period="monthly">Единоразовая оплата</button>
+                    <button class="switch-btn" data-period="yearly">Пакетные услуги</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rank Boost Pricing -->
+    <section class="pricing-section" id="rankBoost">
+        <div class="container">
+            <div class="section-header">
+                <h2>Повышение ранга</h2>
+                <p>Профессиональный буст вашего ранга в Valorant</p>
+            </div>
+            
+            <div class="pricing-table">
+                <div class="table-header">
+                    <div class="header-cell">От ранга</div>
+                    <div class="header-cell">До ранга</div>
+                    <div class="header-cell">Примерное время</div>
+                    <div class="header-cell">Цена</div>
+                    <div class="header-cell">Действие</div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">
+                        <div class="rank-badge iron">Iron</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="rank-badge bronze">Bronze</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="time-estimate">6-12 часов</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="price">1 999 ₽</div>
+                    </div>
+                    <div class="table-cell">
+                        <button class="btn btn-primary btn-sm" data-service="rank_boost" data-from="iron" data-to="bronze" data-amount="1999">
+                            Заказать
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">
+                        <div class="rank-badge bronze">Bronze</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="rank-badge silver">Silver</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="time-estimate">12-24 часа</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="price">2 499 ₽</div>
+                    </div>
+                    <div class="table-cell">
+                        <button class="btn btn-primary btn-sm" data-service="rank_boost" data-from="bronze" data-to="silver" data-amount="2499">
+                            Заказать
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">
+                        <div class="rank-badge silver">Silver</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="rank-badge gold">Gold</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="time-estimate">18-36 часов</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="price">2 999 ₽</div>
+                    </div>
+                    <div class="table-cell">
+                        <button class="btn btn-primary btn-sm" data-service="rank_boost" data-from="silver" data-to="gold" data-amount="2999">
+                            Заказать
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">
+                        <div class="rank-badge gold">Gold</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="rank-badge platinum">Platinum</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="time-estimate">24-48 часов</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="price">3 499 ₽</div>
+                    </div>
+                    <div class="table-cell">
+                        <button class="btn btn-primary btn-sm" data-service="rank_boost" data-from="gold" data-to="platinum" data-amount="3499">
+                            Заказать
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="table-row">
+                    <div class="table-cell">
+                        <div class="rank-badge platinum">Platinum</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="rank-badge diamond">Diamond</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="time-estimate">36-72 часа</div>
+                    </div>
+                    <div class="table-cell">
+                        <div class="price">4 999 ₽</div>
+                    </div>
+                    <div class="table-cell">
+                        <button class="btn btn-primary btn-sm" data-service="rank_boost" data-from="platinum" data-to="diamond" data-amount="4999">
+                            Заказать
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p><strong>Примечание:</strong> Цены указаны за 1 ранг. При заказе повышения через несколько рангов предоставляется скидка.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wins Boost Pricing -->
+    <section class="pricing-section" id="winsBoost">
+        <div class="container">
+            <div class="section-header">
+                <h2>Буст побед</h2>
+                <p>Нужны победы для заданий или получения наград?</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>5 побед</h3>
+                        <div class="price">1 495 ₽</div>
+                        <div class="per-win">299 ₽ за победу</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Любой режим игры</li>
+                            <li><i class="fas fa-check"></i> Гарантия результата</li>
+                            <li><i class="fas fa-check"></i> Быстрое выполнение</li>
+                            <li><i class="fas fa-check"></i> Онлайн отчет</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-block" data-service="wins_boost" data-wins="5" data-amount="1495">
+                            Заказать 5 побед
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Популярно</div>
+                    <div class="card-header">
+                        <h3>10 побед</h3>
+                        <div class="price">2 540 ₽</div>
+                        <div class="per-win">254 ₽ за победу</div>
+                        <div class="discount">Экономия 450 ₽</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Все из пакета 5 побед</li>
+                            <li><i class="fas fa-check"></i> Приоритетное выполнение</li>
+                            <li><i class="fas fa-check"></i> Детальная статистика</li>
+                            <li><i class="fas fa-check"></i> Поддержка 24/7</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-block" data-service="wins_boost" data-wins="10" data-amount="2540">
+                            Заказать 10 побед
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>20 побед</h3>
+                        <div class="price">4 780 ₽</div>
+                        <div class="per-win">239 ₽ за победу</div>
+                        <div class="discount">Экономия 1 200 ₽</div>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li><i class="fas fa-check"></i> Все из пакета 10 побед</li>
+                            <li><i class="fas fa-check"></i> Максимальная скорость</li>
+                            <li><i class="fas fa-check"></i> VIP поддержка</li>
+                            <li><i class="fas fa-check"></i> Бонусные услуги</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary btn-block" data-service="wins_boost" data-wins="20" data-amount="4780">
+                            Заказать 20 побед
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Services -->
+    <section class="pricing-section" id="otherServices">
+        <div class="container">
+            <div class="section-header">
+                <h2>Другие услуги</h2>
+                <p>Полный спектр услуг для вашего прогресса в Valorant</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-pricing-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Калибровка аккаунта</h3>
+                    <p class="service-description">
+                        Высокий стартовый ранг для нового аккаунта или сезона
+                    </p>
+                    <div class="service-price">
+                        <div class="price-main">2 499 ₽</div>
+                        <div class="price-note">за 10 игр калибровки</div>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Гарантированный высокий рейтинг</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Подробная статистика</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Быстрое выполнение</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block" data-service="placement" data-amount="2499">
+                        Заказать калибровку
+                    </button>
+                </div>
+                
+                <div class="service-pricing-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Коучинг</h3>
+                    <p class="service-description">
+                        Индивидуальные тренировки с топ-игроками
+                    </p>
+                    <div class="service-price">
+                        <div class="price-main">999 ₽</div>
+                        <div class="price-note">за 1 час занятий</div>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Персональный подход</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Разбор демо записей</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Практические занятия</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block" data-service="coaching" data-amount="999">
+                        Заказать коучинг
+                    </button>
+                </div>
+                
+                <div class="service-pricing-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-cog"></i>
+                    </div>
+                    <h3>Аккаунт под ключ</h3>
+                    <p class="service-description">
+                        Полностью готовый аккаунт с высоким рангом
+                    </p>
+                    <div class="service-price">
+                        <div class="price-main">4 999 ₽</div>
+                        <div class="price-note">готовый аккаунт</div>
+                    </div>
+                    <div class="service-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Аккаунт с рангом Platinum+</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Полная безопасность</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Гарантия замены</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block" data-service="account" data-amount="4999">
+                        Заказать аккаунт
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="pricing-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Частые вопросы о ценах</h2>
+                <p>Ответы на самые популярные вопросы о стоимости услуг</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Почему такие цены?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Наши цены отражают высокое качество услуг: работают только профессиональные игроки с рейтингом Radiant, используется премиальное оборудование и обеспечивается максимальная безопасность.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Есть ли скидки?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы предоставляем скидки: 10% за повторный заказ, 15% за заказ от 5000 ₽, 20% за заказ от 10000 ₽. Также действуют акции и специальные предложения.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можно ли оплатить частями?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, для заказов от 5000 ₽ доступна оплата в 2 части: 50% предоплата и 50% после выполнения. Также можно оплатить через Тинькофф в рассрочку.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Что влияет на конечную стоимость?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Стоимость зависит от: начального и целевого ранга, срочности выполнения, сложности задания, текущей загруженности бустеров и выбранных дополнительных опций.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="pricing-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Готовы начать?</h2>
+                <p>Выберите услугу и оформите заказ прямо сейчас</p>
+                <a href="/#order" class="btn btn-primary btn-lg">
+                    <i class="fas fa-bolt"></i> Оформить заказ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="/" class="footer-logo">
+                        VAB<span>BOOST</span>
+                    </a>
+                    <p class="footer-description">
+                        Профессиональный сервис буста в Valorant.<br>
+                        Быстро, безопасно, эффективно.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Услуги</h4>
+                    <ul class="footer-links">
+                        <li><a href="#rankBoost">Повышение ранга</a></li>
+                        <li><a href="#winsBoost">Буст побед</a></li>
+                        <li><a href="#otherServices">Другие услуги</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li><i class="fas fa-envelope"></i> sales@vab-boost.ru</li>
+                        <li><i class="fab fa-telegram"></i> @vabboost_sales</li>
+                        <li><i class="fas fa-phone"></i> 8 (800) 123-45-67</li>
+                        <li><i class="fas fa-clock"></i> 10:00 - 22:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 VAB BOOST. Все права защищены.</p>
+                <p>ИП Иванов Иван Иванович | ИНН 123456789012 | ОГРНИП 123456789012345</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/pricelist.js"></script>
+    
+    <style>
+        .services-hero {
+            padding: calc(var(--header-height) + 4rem) 0 4rem;
+            background: linear-gradient(135deg, var(--dark) 0%, var(--darker) 100%);
+            color: white;
+            text-align: center;
+        }
+        
+        .services-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .services-hero p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .pricing-switch {
+            display: inline-flex;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: var(--border-radius-full);
+            padding: 0.25rem;
+            margin-top: 2rem;
+        }
+        
+        .switch-btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            background: transparent;
+            color: rgba(255, 255, 255, 0.7);
+            border-radius: var(--border-radius-full);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .switch-btn.active {
+            background: white;
+            color: var(--primary);
+        }
+        
+        .switch-btn:hover:not(.active) {
+            color: white;
+        }
+        
+        .pricing-section {
+            padding: 6rem 0;
+        }
+        
+        .pricing-section:nth-child(even) {
+            background: var(--light);
+        }
+        
+        .dark-mode .pricing-section:nth-child(even) {
+            background: var(--darker);
+        }
+        
+        /* Pricing Table */
+        .pricing-table {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin-top: 2rem;
+        }
+        
+        .dark-mode .pricing-table {
+            background: var(--dark);
+        }
+        
+        .table-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            font-weight: 600;
+        }
+        
+        .header-cell {
+            padding: 0.5rem;
+            text-align: center;
+        }
+        
+        .table-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            padding: 1rem;
+            border-bottom: 1px solid var(--gray-light);
+            align-items: center;
+        }
+        
+        .dark-mode .table-row {
+            border-color: var(--gray-dark);
+        }
+        
+        .table-row:last-child {
+            border-bottom: none;
+        }
+        
+        .table-row:hover {
+            background: var(--gray-light);
+        }
+        
+        .dark-mode .table-row:hover {
+            background: var(--gray-dark);
+        }
+        
+        .table-cell {
+            padding: 0.5rem;
+            text-align: center;
+        }
+        
+        .rank-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius-full);
+            font-weight: 600;
+            color: white;
+            min-width: 100px;
+        }
+        
+        .rank-badge.iron {
+            background: linear-gradient(135deg, #7f7f7f, #595959);
+        }
+        
+        .rank-badge.bronze {
+            background: linear-gradient(135deg, #cd7f32, #a6692b);
+        }
+        
+        .rank-badge.silver {
+            background: linear-gradient(135deg, #c0c0c0, #a0a0a0);
+        }
+        
+        .rank-badge.gold {
+            background: linear-gradient(135deg, #ffd700, #d4af37);
+        }
+        
+        .rank-badge.platinum {
+            background: linear-gradient(135deg, #e5e4e2, #c0c0c0);
+        }
+        
+        .rank-badge.diamond {
+            background: linear-gradient(135deg, #b9f2ff, #89cff0);
+        }
+        
+        .time-estimate {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .price {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        .pricing-note {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: var(--gray-light);
+            border-radius: var(--border-radius-md);
+            text-align: center;
+        }
+        
+        .dark-mode .pricing-note {
+            background: var(--gray-dark);
+        }
+        
+        /* Pricing Cards */
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .pricing-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            transition: transform var(--transition-fast);
+            position: relative;
+        }
+        
+        .dark-mode .pricing-card {
+            background: var(--dark);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .pricing-card.popular {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+        
+        .popular-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--secondary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius-full);
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .card-header {
+            padding: 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+        }
+        
+        .card-header h3 {
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .card-header .price {
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 0.5rem;
+        }
+        
+        .per-win {
+            font-size: 0.875rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+        
+        .discount {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem;
+            border-radius: var(--border-radius-md);
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+        
+        .card-body {
+            padding: 2rem;
+        }
+        
+        .features-list {
+            list-style: none;
+        }
+        
+        .features-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            color: var(--gray);
+        }
+        
+        .features-list i {
+            color: var(--success);
+        }
+        
+        .card-footer {
+            padding: 0 2rem 2rem;
+        }
+        
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-pricing-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+            transition: transform var(--transition-fast);
+        }
+        
+        .dark-mode .service-pricing-card {
+            background: var(--dark);
+        }
+        
+        .service-pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .service-pricing-card h3 {
+            margin-bottom: 1rem;
+        }
+        
+        .service-description {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .service-price {
+            margin: 1.5rem 0;
+        }
+        
+        .price-main {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        .price-note {
+            font-size: 0.875rem;
+            color: var(--gray);
+        }
+        
+        .service-features {
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+        
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--gray);
+        }
+        
+        .feature i {
+            color: var(--success);
+            flex-shrink: 0;
+        }
+        
+        /* FAQ */
+        .pricing-faq {
+            padding: 6rem 0;
+            background: var(--light);
+        }
+        
+        .dark-mode .pricing-faq {
+            background: var(--darker);
+        }
+        
+        .faq-grid {
+            max-width: 800px;
+            margin: 3rem auto 0;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            margin-bottom: 1rem;
+            overflow: hidden;
+            border: 1px solid var(--gray-light);
+        }
+        
+        .dark-mode .faq-item {
+            background: var(--dark);
+            border-color: var(--gray-dark);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .faq-question:hover {
+            background: var(--gray-light);
+        }
+        
+        .dark-mode .faq-question:hover {
+            background: var(--gray-dark);
+        }
+        
+        .faq-question i {
+            transition: transform var(--transition-fast);
+        }
+        
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-normal), padding var(--transition-normal);
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 500px;
+        }
+        
+        /* CTA */
+        .pricing-cta {
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            text-align: center;
+        }
+        
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .cta-content p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .pricing-table {
+                overflow-x: auto;
+            }
+            
+            .table-header,
+            .table-row {
+                min-width: 600px;
+            }
+            
+            .pricing-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .pricing-card.popular {
+                transform: none;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
