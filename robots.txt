@@ -1,7 +1,0 @@
-echo "User-agent: *
-Allow: /
-Disallow: /admin.html
-Disallow: /api/
-Disallow: /config.php
-Disallow: /install.php
-Sitemap: https://vab-boost.ru/sitemap.xml" > robots.txt
